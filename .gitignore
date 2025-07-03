@@ -1,0 +1,24 @@
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files
+*.sqlite
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Data files (except our test directory structure)
+datafiles/*
+!datafiles/.gitkeep 

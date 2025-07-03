@@ -1,0 +1,2 @@
+# This file ensures the datafiles directory is tracked by Git
+# The directory is used for testing file search functionality in Task 3 
