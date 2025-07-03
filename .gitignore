@@ -12,7 +12,6 @@ Thumbs.db
 *.log
 
 # Database files
-*.sqlite
 *.db
 
 # Temporary files
