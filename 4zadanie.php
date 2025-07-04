@@ -91,7 +91,7 @@
         <h1>Задача №4 - Анимированные кнопки</h1>
         <p class="description">
             Нажмите на любую кнопку, чтобы изменить порядок их расположения.<br>
-            Кнопки будут циклически перемещаться в следующем порядке: 1-2-3 → 2-3-1 → 3-1-2 → 1-2-3
+            Кнопки будут циклически перемещаться в следующем порядке: 1-2-3 -> 2-3-1 -> 3-1-2 -> 1-2-3
         </p>
         
         <div class="button-container" id="buttonContainer">
@@ -108,10 +108,6 @@
     <script>
         /**
          * Класс для управления анимацией кнопок
-         * 
-         * @class ButtonAnimator
-         * @author Your Name
-         * @version 1.0
          */
         class ButtonAnimator {
             /**
@@ -214,7 +210,7 @@
                 Promise.all(promises).then(() => {
                     this.reorderButtons();
                     buttons.show();
-                    this.bindClickHandlers(); // Перепривязываем обработчики
+                    this.bindClickHandlers();
                     this.updateStatus();
                 });
             }
