@@ -26,7 +26,7 @@ final class FileFinder
      * Проверяет существование директории
      *
      * @access public
-     * @throws Exception Если директория не существует
+     * @throws Exception
      */
     public function __construct()
     {
@@ -52,10 +52,10 @@ final class FileFinder
             'test123.ixt',
             'data456.ixt',
             'report789.ixt',
-            'invalid-file.txt',  // Неправильное расширение
-            'файл.ixt',          // Кириллица - не подходит
-            'file with spaces.ixt', // Пробелы - не подходит
-            'file@special.ixt',  // Спецсимволы - не подходит
+            'invalid-file.txt',  
+            'файл.ixt',          
+            'file with spaces.ixt', 
+            'file@special.ixt', 
             '123456.ixt',
             'abcDEF.ixt',
             'test.ixt'
@@ -85,8 +85,8 @@ final class FileFinder
      * Находит все файлы, соответствующие заданным критериям
      *
      * @access public
-     * @return array Массив имен файлов, упорядоченных по алфавиту
-     * @throws Exception Если не удается прочитать директорию
+     * @return array
+     * @throws Exception 
      */
     public function findFiles(): array
     {
