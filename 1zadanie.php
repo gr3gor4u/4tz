@@ -5,10 +5,6 @@
  * Финальный класс, от которого нельзя сделать наследника.
  * Создает таблицу test, заполняет её случайными данными и предоставляет
  * метод для выборки данных по определенным критериям.
- * 
- * @final
- * @author Your Name
- * @version 1.0
  */
 final class Init
 {
@@ -35,7 +31,7 @@ final class Init
      * Создает таблицу test и заполняет ее случайными данными.
      *
      * @access public
-     * @throws Exception Если не удается подключиться к базе данных
+     * @throws Exception 
      */
     public function __construct()
     {
@@ -53,7 +49,7 @@ final class Init
      * 
      * @access private
      * @return void
-     * @throws Exception Если не удается создать таблицу
+     * @throws Exception
      */
     private function create(): void
     {
@@ -80,13 +76,12 @@ final class Init
      *
      * @access private
      * @return void
-     * @throws Exception Если не удается заполнить таблицу
+     * @throws Exception 
      */
     private function fill(): void
     {
         $this->connect();
         
-        // Очищаем таблицу перед заполнением
         $this->pdo->exec("TRUNCATE TABLE test");
         
         $numRows = 10;
@@ -136,8 +131,8 @@ final class Init
      * Доступен извне класса.
      *
      * @access public
-     * @return array|null Массив с данными или null, если произошла ошибка
-     * @throws Exception Если не удается выполнить запрос
+     * @return array|null 
+     * @throws Exception 
      */
     public function get(): ?array
     {
@@ -174,7 +169,7 @@ final class Init
 }
 
 try {
-    echo "=== Задача №1 - Класс Init ===\n\n";
+    echo "---Задача №1 - Класс Init---\n\n";
     
     $init = new Init();
     $data = $init->get();
